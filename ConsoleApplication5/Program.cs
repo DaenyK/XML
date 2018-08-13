@@ -16,6 +16,13 @@ namespace ConsoleApplication5
                 Console.WriteLine(item);
             }
 
+            Console.WriteLine(  "----------------------------------");
+
+            Console.Write("введите сумму в тенге: ");
+            double amount = double.Parse(Console.ReadLine());
+            Console.WriteLine("\nсумма в USD: "+amount/GetRates()[2].description);
+            Console.WriteLine();
+
 
             // GetExchangeRates();
 
